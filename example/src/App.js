@@ -1,10 +1,17 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-goodnight'
-import 'react-goodnight/dist/index.css'
+import Provider, { useDarkMode } from 'react-goodnight'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [theme, toggle] = useDarkMode()
+
+  console.log(theme)
+  return (
+    <Provider>
+      <div>hey</div>
+      <button onClick={toggle}>Switch Theme</button>
+    </Provider>
+  )
 }
 
 export default App
