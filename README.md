@@ -12,18 +12,7 @@ npm install --save react-goodnight
 
 ## Usage
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'react-goodnight'
-import 'react-goodnight/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
+Coming soon.
 
 ## License
 
